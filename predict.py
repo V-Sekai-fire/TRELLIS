@@ -80,13 +80,13 @@ class Predictor(BasePredictor):
         ),
         mesh_simplify: float = Input(
             description="GLB Extraction - Mesh Simplification (only used if generate_model=True)", 
-            default=0.95,
-            ge=0.9,
+            default=0,
+            ge=0,
             le=0.98
         ),
         texture_size: int = Input(
             description="GLB Extraction - Texture Size (only used if generate_model=True)",
-            default=1024,
+            default=2048,
             ge=512,
             le=2048
         )
