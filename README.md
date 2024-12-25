@@ -59,12 +59,15 @@ print(output)
 ```
 
 ## Example Openapi Line Usage
+## Example OpenAPI Line Usage
 
 ```bash
 cog serve
 # Ensure the server is running and note the port it is using (it may vary)
 curl -o openapi.json http://localhost:<port>/openapi.json
 # Open the openapi.json file in https://mermade.github.io/openapi-gui/
+# Use the OpenAPI GUI to upload the image
+# "image": "https://replicate.delivery/pbxt/M6rvlcKpjcTijzvLfJw8SCWQ74M1jrxowbVDT6nNTxREcvxO/ephemeros_cartoonish_character_art_cyberpunk_crocodile_white_ba_486fb649-bc68-46a0-b429-751b43734b89.png"
 ```
 
 
