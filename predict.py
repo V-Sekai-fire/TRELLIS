@@ -52,7 +52,7 @@ class Predictor(BasePredictor):
         seed: int = Input(description="Random seed for generation", default=0),
         randomize_seed: bool = Input(description="Randomize seed", default=True),
         generate_color: bool = Input(description="Generate color video render", default=True),
-        generate_normal: bool = Input(description="Generate normal video render", default=False),
+        generate_normal: bool = Input(description="Generate normal video render", default=True),
         generate_model: bool = Input(description="Generate 3D model file (GLB)", default=True),
         ss_guidance_strength: float = Input(
             description="Stage 1: Sparse Structure Generation - Guidance Strength",
