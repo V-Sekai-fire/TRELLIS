@@ -80,7 +80,7 @@ class Predictor(BasePredictor):
         ),
         mesh_simplify: float = Input(
             description="GLB Extraction - Mesh Simplification (only used if generate_model=True)", 
-            default=0,
+            default=0.65,
             ge=0,
             le=0.98
         ),
