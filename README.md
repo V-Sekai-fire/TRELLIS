@@ -64,6 +64,10 @@ print(output)
 cog predict -i image=@assets/example_image/The_front_view_is_a_young_woman_mage_light_guardian_with_realistic_adu_S3728563760_St8_G1.png
 ```
 
+### Troubleshooting
+
+If you cannot `cog push` in Docker Desktop, try disabling containerd.
+
 ## Citations
 
 ```bibtex
