@@ -13,7 +13,6 @@ TRELLIS is a powerful 3D asset generation model that converts text or image prom
 TRELLIS uses a unified Structured LATent (SLAT) representation that enables generation of different 3D output formats. The model deployed here is TRELLIS-image-large, which contains 1.2B parameters and is trained on a diverse dataset of 500K 3D objects.
 
 Key features:
-
 - Generate high-quality 3D assets from input images
 - Multiple output formats: 3D Gaussians, Radiance Fields, and textured meshes
 - Detailed shape and texture generation
@@ -24,14 +23,12 @@ For more examples and to try it directly in your browser, visit the [Replicate m
 ## Input Format
 
 The model accepts:
-
 - An input image (PNG or JPEG format)
 - Optional parameters for controlling the generation process
 
 ## Output Format
 
 The model outputs:
-
 - A GLB file containing the generated 3D model with textures
 - Preview renders from multiple angles
 - Optional: Raw 3D Gaussians or Radiance Field representations
@@ -61,15 +58,10 @@ output = replicate.run(
 print(output)
 ```
 
-## Example Openapi Line Usage
+## Example Command Line Usage
 
 ```bash
-cog serve
-# Ensure the server is running and note the port it is using (it may vary)
-curl -o openapi.json http://localhost:<port>/openapi.json
-# Open the openapi.json file in https://mermade.github.io/openapi-gui/
-# Use the OpenAPI GUI to upload the image
-# "image": "https://replicate.delivery/pbxt/M6rvlcKpjcTijzvLfJw8SCWQ74M1jrxowbVDT6nNTxREcvxO/ephemeros_cartoonish_character_art_cyberpunk_crocodile_white_ba_486fb649-bc68-46a0-b429-751b43734b89.png"
+cog predict -i image=@assets/example_image/The_front_view_is_a_young_woman_mage_light_guardian_with_realistic_adu_S3728563760_St8_G1.png
 ```
 
 ## Citations
