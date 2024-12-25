@@ -58,23 +58,15 @@ output = replicate.run(
 print(output)
 ```
 
-## Example Command Line Usage
+## Example Openapi Line Usage
 
 ```bash
-cog predict \
-    -i seed=0 \
-    -i image=@assets/example_image/slavic_girl_brown_hair.png \
-    -i texture_size=2048 \
-    -i mesh_simplify=0.0 \
-    -i generate_color=True \
-    -i generate_model=True \
-    -i randomize_seed=True \
-    -i generate_normal=True \
-    -i ss_sampling_steps=12 \
-    -i slat_sampling_steps=12 \
-    -i ss_guidance_strength=7.5 \
-    -i slat_guidance_strength=3
+cog serve
+# Ensure the server is running and note the port it is using (it may vary)
+curl -o openapi.json http://localhost:<port>/openapi.json
+# Open the openapi.json file in https://mermade.github.io/openapi-gui/
 ```
+
 
 ## Citations
 
