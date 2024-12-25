@@ -24,7 +24,6 @@ build:
     - "setuptools>=41.0.0"
     - "wheel"
     - "ninja"
-    - "plyfile"
 
   run:
     # Set environment variables
@@ -42,6 +41,7 @@ build:
     - pip install --no-cache-dir numpy scipy pillow
     - pip install --no-cache-dir imageio imageio-ffmpeg tqdm easydict
     - pip install --no-cache-dir rembg onnxruntime
+    - pip install --no-cache-dir plyfile
     - pip install --no-cache-dir trimesh xatlas pyvista pymeshfix
     - pip install --no-cache-dir igraph transformers huggingface_hub
     # Install kaolin
