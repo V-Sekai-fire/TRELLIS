@@ -24,6 +24,7 @@ build:
     - "setuptools>=41.0.0"
     - "wheel"
     - "ninja"
+    - "plyfile"
 
   run:
     # Set environment variables
