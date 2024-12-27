@@ -86,7 +86,7 @@ class Predictor(BasePredictor):
         ),
         texture_size: int = Input(
             description="GLB Extraction - Texture Size (only used if generate_model=True)",
-            default=2048,
+            default=512,
             ge=512,
             le=2048
         )
